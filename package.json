@@ -1,0 +1,21 @@
+{
+  "name": "studypal-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "server": "json-server --watch db.json --port 3001"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "date-fns": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.16",
+    "json-server": "^1.0.0-beta.3"
+  }
+}
