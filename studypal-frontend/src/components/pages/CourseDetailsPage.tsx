@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { getCourseById, updateCourse, deleteCourse } from '../services/api';
-import { authService } from '../services/auth';
+import { useParams } from 'react-router-dom';
+import { getCourseById } from '../../services/api';
 
 interface Course {
   id: number;
@@ -28,23 +27,9 @@ interface Course {
 
 export default function CourseDetailsPage() {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
   const [course, setCourse] = useState<Course | null>(null);
-  const [isEditing, setIsEditing] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState<string | null>(null);
-  const currentUser = authService.getCurrentUser();
-
-  const [formData, setFormData] = useState<Partial<Course>>({
-    title: '',
-    description: '',
-    duration: '',
-    total_lessons: 0,
-    category: '',
-    prerequisites: [],
-    tags: []
-  });
 
   useEffect(() => {
     const fetchCourse = async () => {
@@ -52,15 +37,6 @@ export default function CourseDetailsPage() {
         if (!id) throw new Error('No course ID provided');
         const response = await getCourseById(parseInt(id));
         setCourse(response.data);
-        setFormData({
-          title: response.data.title,
-          description: response.data.description,
-          duration: response.data.duration,
-          total_lessons: response.data.total_lessons,
-          category: response.data.category,
-          prerequisites: response.data.prerequisites || [],
-          tags: response.data.tags || []
-        });
       } catch (err) {
         setError('Failed to fetch course details');
         console.error('Error fetching course:', err);
@@ -72,12 +48,17 @@ export default function CourseDetailsPage() {
     fetchCourse();
   }, [id]);
 
-  // ... rest of the component code ...
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <div className="flex-1 bg-white rounded-3xl p-8">
-      {/* ... existing JSX ... */}
-      {!isEditing && course && (
+      {course && (
         <div className="space-y-8">
           <div>
             <img
@@ -97,11 +78,9 @@ export default function CourseDetailsPage() {
               <h2 className="text-sm font-medium text-gray-500">Instructor</h2>
               <p className="mt-1 text-lg text-gray-900">{course.instructor}</p>
             </div>
-
-            {/* ... rest of the display JSX ... */}
           </div>
         </div>
       )}
     </div>
   );
-} 
+}

@@ -34,6 +34,8 @@ interface ChatUser {
   online: boolean;
 }
 
+const API_URL = 'http://localhost:5000';
+
 export default function MessagingPage() {
   const { user } = useAuth();
   const { chatId } = useParams<{ chatId: string }>();
@@ -63,8 +65,8 @@ export default function MessagingPage() {
     const fetchData = async () => {
       try {
         const [messagesRes, usersRes] = await Promise.all([
-          axios.get<Message[]>('http://localhost:3000/messages'),
-          axios.get<User[]>('http://localhost:3000/users')
+          axios.get<Message[]>(`${API_URL}/messages`),
+          axios.get<User[]>(`${API_URL}/users`)
         ]);
 
         if (!isMounted) return;
@@ -133,7 +135,7 @@ export default function MessagingPage() {
       try {
         await Promise.all(
           messagesToUpdate.map(msg =>
-            axios.patch(`http://localhost:3000/messages/${msg.id}`, { read: true })
+            axios.patch(`${API_URL}/messages/${msg.id}`, { read: true })
           )
         );
 
@@ -181,7 +183,7 @@ export default function MessagingPage() {
         read: false
       };
 
-      const response = await axios.post('http://localhost:3000/messages', messageData);
+      const response = await axios.post(`${API_URL}/messages`, messageData);
       setMessages(prev => [...prev, response.data]);
       setNewMessage('');
     } catch (error) {

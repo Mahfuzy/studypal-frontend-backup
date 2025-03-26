@@ -10,9 +10,11 @@ const TaskList: React.FC = () => {
   const [newTask, setNewTask] = useState({
     title: '',
     description: '',
-    priority: 'medium',
+    priority: 'medium' as 'low' | 'medium' | 'high',
     dueDate: new Date().toISOString().split('T')[0],
-    status: 'pending'
+    status: 'pending' as const,
+    userId: 1, // TODO: Get from auth context
+    sessionId: 1 // TODO: Get from current session
   });
 
   const { data: tasks, isLoading, error } = useQuery<Task[]>({
@@ -33,7 +35,9 @@ const TaskList: React.FC = () => {
         description: '',
         priority: 'medium',
         dueDate: new Date().toISOString().split('T')[0],
-        status: 'pending'
+        status: 'pending',
+        userId: 1,
+        sessionId: 1
       });
     },
   });
@@ -66,7 +70,7 @@ const TaskList: React.FC = () => {
 
   const handleCreateTask = (e: React.FormEvent) => {
     e.preventDefault();
-    createTaskMutation.mutate(newTask);
+    createTaskMutation.mutate(newTask as Omit<Task, 'id'>);
   };
 
   const handleUpdateTask = (e: React.FormEvent) => {
@@ -110,7 +114,7 @@ const TaskList: React.FC = () => {
             <div className="flex gap-4">
               <select
                 value={newTask.priority}
-                onChange={(e) => setNewTask({ ...newTask, priority: e.target.value })}
+                onChange={(e) => setNewTask({ ...newTask, priority: e.target.value as 'low' | 'medium' | 'high' })}
                 className="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               >
                 <option value="low">Low Priority</option>
@@ -167,7 +171,7 @@ const TaskList: React.FC = () => {
                 <div className="flex gap-4">
                   <select
                     value={editingTask.priority}
-                    onChange={(e) => setEditingTask({ ...editingTask, priority: e.target.value })}
+                    onChange={(e) => setEditingTask({ ...editingTask, priority: e.target.value as 'low' | 'medium' | 'high' })}
                     className="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
                   >
                     <option value="low">Low Priority</option>
