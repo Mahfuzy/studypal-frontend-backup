@@ -137,7 +137,7 @@ export default function CreateCoursePage() {
               name="title"
               value={formData.title}
               onChange={handleInputChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
               required
             />
           </div>
@@ -149,7 +149,7 @@ export default function CreateCoursePage() {
               value={formData.description}
               onChange={handleInputChange}
               rows={4}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
               required
             />
           </div>
@@ -180,7 +180,7 @@ export default function CreateCoursePage() {
                     file:rounded-full file:border-0
                     file:text-sm file:font-semibold
                     file:bg-blue-50 file:text-blue-700
-                    hover:file:bg-blue-100"
+                    hover:file:bg-blue-100 p-2"
                 />
                 <p className="mt-1 text-sm text-gray-500">
                   Upload a course image (JPG, PNG, GIF)
@@ -196,7 +196,7 @@ export default function CreateCoursePage() {
               name="duration"
               value={formData.duration}
               onChange={handleInputChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
               required
             />
           </div>
@@ -208,7 +208,7 @@ export default function CreateCoursePage() {
               name="total_lessons"
               value={formData.total_lessons}
               onChange={handleInputChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
               required
             />
           </div>
@@ -220,7 +220,7 @@ export default function CreateCoursePage() {
               name="category"
               value={formData.category}
               onChange={handleInputChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
               required
             />
           </div>
@@ -231,7 +231,7 @@ export default function CreateCoursePage() {
               type="text"
               value={formData.prerequisites.join(', ')}
               onChange={(e) => handleArrayInputChange(e, 'prerequisites')}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
             />
           </div>
 
@@ -241,7 +241,7 @@ export default function CreateCoursePage() {
               type="text"
               value={formData.tags.join(', ')}
               onChange={(e) => handleArrayInputChange(e, 'tags')}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
             />
           </div>
 
@@ -267,7 +267,7 @@ export default function CreateCoursePage() {
                         type="text"
                         value={week.topic}
                         onChange={(e) => handleSyllabusChange(index, 'topic', e.target.value)}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
                         required
                       />
                     </div>
@@ -277,7 +277,7 @@ export default function CreateCoursePage() {
                         value={week.description}
                         onChange={(e) => handleSyllabusChange(index, 'description', e.target.value)}
                         rows={2}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
                         required
                       />
                     </div>
@@ -297,4 +297,4 @@ export default function CreateCoursePage() {
       </div>
     </div>
   );
-} 
+}

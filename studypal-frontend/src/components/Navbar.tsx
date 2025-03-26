@@ -34,6 +34,11 @@ const Navbar = () => {
     setActiveItem('profile');
   };
 
+  const handleLogout = () => {
+    authService.logout();
+    navigate('/');
+  };
+
   return (
     <>
       {/* Mobile menu button */}
@@ -302,7 +307,7 @@ const Navbar = () => {
           </ul>
         </nav>
         
-        <div className="p-6 mt-auto">
+        <div className="p-6 mt-auto space-y-4">
           <div className="bg-[#4B3C7D] rounded-lg p-4">
             <h3 className="font-bold">Talk with Tae</h3>
             <p className="text-sm text-gray-300 mb-3">Your Personalized AI Bot</p>
@@ -313,8 +318,18 @@ const Navbar = () => {
               Start
             </button>
           </div>
+
+          {/* Logout Button */}
+          <button
+            onClick={handleLogout}
+            className="w-full flex items-center justify-center p-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors"
+          >
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+            </svg>
+            Logout
+          </button>
         </div>
-        
       </div>
     </>
   );

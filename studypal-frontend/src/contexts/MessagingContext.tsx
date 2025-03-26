@@ -27,7 +27,7 @@ export function MessagingProvider({ children }: { children: React.ReactNode }) {
     if (!user) return;
 
     // Set up WebSocket connection for real-time messaging
-    const ws = new WebSocket(`ws://your-api-url/ws?userId=${user.id}`);
+    const ws = new WebSocket(`ws://localhost:3000/ws?userId=${user.id}`);
 
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);

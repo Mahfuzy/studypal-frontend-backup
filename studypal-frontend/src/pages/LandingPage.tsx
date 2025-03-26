@@ -44,7 +44,6 @@ const LandingPage: React.FC = () => {
           <div className="space-x-4">
             <Link to="/" className="text-gray-600 hover:text-gray-800">Home</Link>
             <Link to="/courses" className="text-gray-600 hover:text-gray-800">Courses</Link>
-            <Link to="/about" className="text-gray-600 hover:text-gray-800">About</Link>
             <Link to="/contact" className="text-gray-600 hover:text-gray-800">Contact</Link>
             <Link to="/signup" className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">Sign Up</Link>
             <Link to="/login" className="text-purple-600 hover:text-purple-700">Log In</Link>
@@ -79,7 +78,7 @@ const LandingPage: React.FC = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="/hero-illustration.png"
+              src="/landing_illustration.png"
               alt="Study Illustration"
               className="w-full"
             />

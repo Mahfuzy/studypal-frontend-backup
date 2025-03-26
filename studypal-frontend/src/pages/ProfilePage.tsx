@@ -88,7 +88,7 @@ export default function ProfilePage() {
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
                 required
               />
             </div>
@@ -100,7 +100,7 @@ export default function ProfilePage() {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
                 required
               />
             </div>
@@ -112,7 +112,7 @@ export default function ProfilePage() {
                 name="username"
                 value={formData.username}
                 onChange={handleInputChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
                 required
               />
             </div>
@@ -157,4 +157,4 @@ export default function ProfilePage() {
       </div>
     </div>
   );
-} 
+}
