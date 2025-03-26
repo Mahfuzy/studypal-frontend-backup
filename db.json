@@ -1,0 +1,1091 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "light",
+      "email": "light@gmail.com",
+      "password": "dinocharge",
+      "name": "Light",
+      "role": "instructor",
+      "created_at": "2024-03-01T00:00:00Z",
+      "last_login": "2025-03-26T17:46:12.394Z",
+      "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+      "status": "Expert in Computer Science and Mathematics",
+      "aboutMe": "Passionate instructor with 5 years of teaching experience",
+      "expertise": [
+        "Programming",
+        "Web Development",
+        "Algorithms"
+      ],
+      "rating": 4.9,
+      "hourlyRate": 45,
+      "subjects": [
+        "Computer Science",
+        "Mathematics"
+      ],
+      "location": "Ghana, Accra"
+    },
+    {
+      "id": "2",
+      "username": "janesmith",
+      "email": "jane@example.com",
+      "password": "dinocharge",
+      "name": "Jane Smith",
+      "role": "student",
+      "last_login": "2025-03-25T08:14:25.316Z"
+    },
+    {
+      "id": "3",
+      "username": "profwilson",
+      "email": "wilson@example.com",
+      "password": "dinocharge",
+      "name": "Dr. Robert Wilson",
+      "role": "instructor",
+      "avatar": "https://randomuser.me/api/portraits/men/2.jpg",
+      "status": "Available for Physics tutoring",
+      "aboutMe": "Physics professor with PhD in Quantum Mechanics",
+      "expertise": [
+        "Quantum Physics",
+        "Mechanics",
+        "Thermodynamics"
+      ],
+      "rating": 4.8,
+      "hourlyRate": 50,
+      "subjects": [
+        "Physics",
+        "Mathematics"
+      ],
+      "location": "Ghana, Accra"
+    },
+    {
+      "id": "4",
+      "name": " Aku",
+      "email": "maranatha@gmail.com",
+      "password": "dinocharge",
+      "role": "student",
+      "avatar": "https://randomuser.me/api/portraits/women/4.jpg",
+      "location": "Ghana, Kumasi",
+      "joined": "2025",
+      "xp": 1231,
+      "target_xp": 1300,
+      "streak_days": 36,
+      "last_login": "2025-03-26T01:24:09.770Z",
+      "username": "Maranatha"
+    },
+    {
+      "id": "5",
+      "username": "dremily",
+      "email": "emily@example.com",
+      "password": "dinocharge",
+      "name": "Dr. Emily Chen",
+      "role": "instructor",
+      "avatar": "https://randomuser.me/api/portraits/women/1.jpg",
+      "status": "Chemistry expert available for tutoring",
+      "aboutMe": "Chemistry professor with research experience in organic chemistry",
+      "expertise": [
+        "Organic Chemistry",
+        "Biochemistry",
+        "General Chemistry"
+      ],
+      "rating": 4.7,
+      "hourlyRate": 40,
+      "subjects": [
+        "Chemistry",
+        "Biology"
+      ],
+      "location": "Ghana, Tema"
+    }
+  ],
+  "user_profiles": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "profile_settings": {
+        "avatar_url": "https://randomuser.me/api/portraits/men/1.jpg",
+        "bio": "Passionate instructor with 5 years of teaching experience",
+        "status": "Expert in Computer Science and Mathematics",
+        "location": "Ghana, Accra",
+        "language": "English",
+        "timezone": "GMT+0",
+        "visibility": "public"
+      },
+      "tutor_settings": {
+        "expertise": [
+          "Programming",
+          "Web Development",
+          "Algorithms"
+        ],
+        "rating": 4.9,
+        "hourly_rate": 45,
+        "subjects": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "availability_status": "available",
+        "auto_accept_bookings": false,
+        "minimum_session_duration": 30,
+        "maximum_session_duration": 120,
+        "booking_lead_time": 24,
+        "cancellation_policy": "24h"
+      },
+      "study_preferences": {
+        "preferred_study_time": "morning",
+        "study_duration": 45,
+        "break_duration": 15,
+        "preferred_subjects": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "study_reminders": true,
+        "daily_study_goal": 120,
+        "weekly_study_goal": 600,
+        "pomodoro_settings": {
+          "work_duration": 25,
+          "break_duration": 5,
+          "long_break_duration": 15,
+          "sessions_before_long_break": 4
+        }
+      },
+      "notification_settings": {
+        "email_notifications": {
+          "course_updates": true,
+          "assignment_reminders": true,
+          "tutor_messages": true,
+          "session_reminders": true,
+          "study_reminders": true
+        },
+        "push_notifications": {
+          "enabled": true,
+          "quiet_hours": {
+            "start": "22:00",
+            "end": "07:00"
+          },
+          "types": {
+            "messages": true,
+            "bookings": true,
+            "course_updates": true,
+            "deadlines": true
+          }
+        },
+        "sound_notifications": {
+          "enabled": true,
+          "message_sound": "default",
+          "reminder_sound": "bell"
+        }
+      },
+      "appearance_settings": {
+        "theme": "light",
+        "color_scheme": "purple",
+        "font_size": "medium",
+        "compact_view": false,
+        "show_avatars": true,
+        "animations_enabled": true
+      },
+      "privacy_settings": {
+        "profile_visibility": "public",
+        "show_online_status": true,
+        "show_study_status": true,
+        "allow_messages_from": "all",
+        "share_progress": true,
+        "share_achievements": true
+      },
+      "chat_settings": {
+        "message_preview": true,
+        "read_receipts": true,
+        "typing_indicators": true,
+        "emoji_suggestions": true,
+        "auto_reply": {
+          "enabled": false,
+          "message": "I'll get back to you soon!"
+        },
+        "blocked_users": []
+      },
+      "voice_video_settings": {
+        "input_device": "default",
+        "output_device": "default",
+        "video_quality": "720p",
+        "noise_cancellation": true,
+        "echo_cancellation": true,
+        "auto_gain_control": true,
+        "background_blur": false
+      },
+      "accessibility_settings": {
+        "screen_reader": false,
+        "high_contrast": false,
+        "reduced_motion": false,
+        "keyboard_shortcuts": true,
+        "font_type": "default"
+      },
+      "calendar_settings": {
+        "default_view": "week",
+        "start_of_week": "monday",
+        "working_hours": {
+          "start": "09:00",
+          "end": "17:00"
+        },
+        "reminder_defaults": {
+          "sessions": 15,
+          "deadlines": 60,
+          "events": 30
+        }
+      },
+      "achievements": [
+        {
+          "id": 1,
+          "title": "First Course Completed",
+          "description": "Completed your first course",
+          "date_earned": "2024-03-15"
+        },
+        {
+          "id": 2,
+          "title": "Perfect Score",
+          "description": "Achieved 100% on a quiz",
+          "date_earned": "2024-03-20"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "user_id": 2,
+      "avatar_url": null,
+      "bio": "Computer Science student passionate about web development",
+      "study_preferences": {
+        "preferred_study_time": "evening",
+        "study_duration": 60,
+        "break_duration": 15,
+        "preferred_subjects": [
+          "Web Development",
+          "React"
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "user_id": 3,
+      "avatar_url": "https://randomuser.me/api/portraits/men/2.jpg",
+      "bio": "Physics professor with PhD in Quantum Mechanics",
+      "expertise": [
+        "Quantum Physics",
+        "Mechanics",
+        "Thermodynamics"
+      ],
+      "rating": 4.8,
+      "hourly_rate": 50,
+      "subjects": [
+        "Physics",
+        "Mathematics"
+      ],
+      "location": "Ghana, Accra"
+    },
+    {
+      "id": "4",
+      "user_id": 4,
+      "avatar_url": "/avatars/maranatha.jpg",
+      "bio": "Final year Computer Science student",
+      "study_preferences": {
+        "preferred_study_time": "morning",
+        "study_duration": 45,
+        "break_duration": 15,
+        "preferred_subjects": [
+          "Computer Science",
+          "Web Development"
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "user_id": 5,
+      "avatar_url": "https://randomuser.me/api/portraits/women/1.jpg",
+      "bio": "Chemistry professor with research experience in organic chemistry",
+      "expertise": [
+        "Organic Chemistry",
+        "Biochemistry",
+        "General Chemistry"
+      ],
+      "rating": 4.7,
+      "hourly_rate": 40,
+      "subjects": [
+        "Chemistry",
+        "Biology"
+      ],
+      "location": "Ghana, Tema"
+    }
+  ],
+  "study_sessions": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "course_id": 1,
+      "session_type": "tutoring",
+      "start_time": "2024-03-24T09:00:00Z",
+      "end_time": "2024-03-24T10:30:00Z",
+      "duration": 90,
+      "topic": "Introduction to Programming",
+      "notes": "Covered basic programming concepts and syntax",
+      "productivity_rating": 4,
+      "resources_used": [
+        "video",
+        "practice problems"
+      ],
+      "goals_achieved": [
+        "Understand variables",
+        "Write basic functions"
+      ],
+      "tutor_id": "1",
+      "tutor_feedback": "Great progress on understanding core concepts"
+    },
+    {
+      "id": "2",
+      "user_id": 1,
+      "course_id": 2,
+      "start_time": "2024-03-24T14:00:00Z",
+      "end_time": "2024-03-24T15:30:00Z",
+      "duration": 90,
+      "topic": "Calculus - Derivatives",
+      "notes": "Practiced derivative rules and applications",
+      "productivity_rating": 5
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "course_id": 1,
+      "enrollment_date": "2024-03-01",
+      "status": "active",
+      "completion_percentage": 75
+    },
+    {
+      "id": "2",
+      "user_id": 1,
+      "course_id": 2,
+      "enrollment_date": "2024-03-05",
+      "status": "completed",
+      "completion_percentage": 100
+    }
+  ],
+  "quiz_attempts": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "quiz_id": 1,
+      "start_time": "2024-03-20T10:00:00Z",
+      "end_time": "2024-03-20T10:25:00Z",
+      "score": 85,
+      "answers": [
+        {
+          "question_id": 1,
+          "selected_option": 0,
+          "is_correct": true
+        }
+      ]
+    }
+  ],
+  "study_goals": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "title": "Complete CS Course",
+      "description": "Finish Introduction to Computer Science course",
+      "target_date": "2024-04-30",
+      "status": "in_progress",
+      "progress": 75
+    },
+    {
+      "id": "2",
+      "user_id": 1,
+      "title": "Daily Study Streak",
+      "description": "Maintain a 30-day study streak",
+      "target_date": "2024-04-15",
+      "status": "in_progress",
+      "progress": 60
+    }
+  ],
+  "study_streaks": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "current_streak": 7,
+      "longest_streak": 15,
+      "last_study_date": "2024-03-24",
+      "streak_history": [
+        {
+          "date": "2024-03-24",
+          "duration": 180
+        },
+        {
+          "date": "2024-03-23",
+          "duration": 120
+        }
+      ],
+      "weekly_goal": 20,
+      "weekly_progress": 15
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "title": "Physics Fundamentals",
+      "description": "Understanding mechanics, thermodynamics, and waves",
+      "instructor": "Dr. Robert Wilson",
+      "progress": 0,
+      "total_lessons": 10,
+      "completed_lessons": 0,
+      "image_url": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa",
+      "status": "not_started",
+      "category": "Physics"
+    },
+    {
+      "id": "3",
+      "title": "ejrqwoirjqiwrj",
+      "description": "ijrq398rj",
+      "duration": "33",
+      "total_lessons": 0,
+      "category": "alkjwer",
+      "prerequisites": [],
+      "tags": [],
+      "image_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "qwrkejqhw",
+          "description": "qjrh",
+          "completed": false
+        }
+      ],
+      "instructor_id": "1",
+      "instructor_name": "Light",
+      "progress": 0,
+      "completed_lessons": 0,
+      "status": "not_started",
+      "created_at": "2025-03-25T07:32:56.666Z",
+      "updated_at": "2025-03-25T07:32:56.666Z"
+    },
+    {
+      "id": "4",
+      "title": "maths",
+      "description": "alkjaoijeqer",
+      "duration": "32",
+      "total_lessons": "02",
+      "category": "algebra",
+      "prerequisites": [
+        "lkjaoier",
+        "lkajeowqi",
+        "ewkrj"
+      ],
+      "tags": [],
+      "image_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+      "syllabus": [],
+      "instructor_id": "1",
+      "instructor_name": "Light",
+      "progress": 0,
+      "completed_lessons": 0,
+      "status": "not_started",
+      "created_at": "2025-03-25T07:34:36.900Z",
+      "updated_at": "2025-03-25T07:34:36.900Z"
+    },
+    {
+      "id": "5",
+      "title": "Programming meme",
+      "description": "something",
+      "duration": "23",
+      "total_lessons": "2",
+      "category": "memes",
+      "prerequisites": [
+        "befunny",
+        ""
+      ],
+      "tags": [
+        "hey",
+        ""
+      ],
+      "image_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "lkje",
+          "description": "q3jr",
+          "completed": false
+        }
+      ],
+      "instructor_id": "1",
+      "instructor": "Light",
+      "progress": 0,
+      "completed_lessons": 0,
+      "status": "not_started",
+      "created_at": "2025-03-25T13:51:23.564Z",
+      "updated_at": "2025-03-25T13:51:23.564Z"
+    },
+    {
+      "id": "6",
+      "title": "Introduction to web development",
+      "description": "Learn web develpment technologies and concepts",
+      "duration": "3",
+      "total_lessons": "5",
+      "category": "web development",
+      "prerequisites": [],
+      "tags": [],
+      "image_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+      "syllabus": [],
+      "instructor_id": "1",
+      "instructor": "Light y",
+      "progress": 0,
+      "completed_lessons": 0,
+      "status": "not_started",
+      "created_at": "2025-03-25T18:40:31.955Z",
+      "updated_at": "2025-03-25T18:40:31.955Z"
+    },
+    {
+      "id": "7",
+      "title": "Introduction to web development",
+      "description": "Webbbb",
+      "duration": "4",
+      "total_lessons": "2",
+      "category": "web development",
+      "prerequisites": [],
+      "tags": [],
+      "image_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+      "syllabus": [],
+      "instructor_id": "1",
+      "instructor": "Light",
+      "progress": 0,
+      "completed_lessons": 0,
+      "status": "not_started",
+      "created_at": "2025-03-26T01:28:11.460Z",
+      "updated_at": "2025-03-26T01:28:11.460Z"
+    }
+  ],
+  "studySessions": [
+    {
+      "id": "1",
+      "userId": 1,
+      "subject": "Computer Science",
+      "topic": "Data Strulkjrqctures",
+      "startTime": "2024-03-25T09:00:00Z",
+      "endTime": "2024-03-25T10:30:00Z",
+      "duration": 90,
+      "status": "completed"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "subject": "Mathematics",
+      "topic": "Calculus - Derivatives",
+      "startTime": "2024-03-25T14:00:00Z",
+      "endTime": "2024-03-25T15:30:00Z",
+      "duration": 90,
+      "status": "completed"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "subject": "Physics",
+      "topic": "Mechanics - Forces",
+      "startTime": "2024-03-26T09:00:00Z",
+      "endTime": "2024-03-26T10:30:00Z",
+      "duration": 90,
+      "status": "planned"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "73f8",
+      "title": "New task",
+      "description": "new",
+      "priority": "low",
+      "dueDate": "2025-03-26",
+      "status": "completed"
+    }
+  ],
+  "notes": [
+    {
+      "id": "2",
+      "userId": 1,
+      "sessionId": 2,
+      "title": "Derivative Rules",
+      "content": "1. Power Rule: d/dx(x^n) = nx^(n-1)\n2. Product Rule: d/dx(uv) = u(dv/dx) + v(du/dx)\n3. Chain Rule: d/dx(f(g(x))) = f'(g(x))g'(x)",
+      "createdAt": "2024-03-25T14:15:00Z",
+      "updatedAt": "2024-03-25T14:45:00Z"
+    },
+    {
+      "id": "59eb",
+      "title": "Something",
+      "content": "something",
+      "userId": 1,
+      "sessionId": 1,
+      "createdAt": "2025-03-26T01:45:30.736Z",
+      "updatedAt": "2025-03-26T01:45:30.736Z"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "1",
+      "userId": 1,
+      "subject": "Computer Science",
+      "question": "What is the time complexity of binary search?",
+      "answer": "O(log n)",
+      "lastReviewed": "2024-03-25T10:00:00Z",
+      "nextReview": "2024-03-26T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "subject": "Mathematics",
+      "question": "What is the derivative of x^2?",
+      "answer": "2x",
+      "lastReviewed": "2024-03-25T15:00:00Z",
+      "nextReview": "2024-03-26T15:00:00Z"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "subject": "Physics",
+      "question": "State Newton's First Law",
+      "answer": "An object remains at rest or in uniform motion unless acted upon by an external force.",
+      "lastReviewed": "2024-03-25T16:00:00Z",
+      "nextReview": "2024-03-26T16:00:00Z"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "1",
+      "course_id": 1,
+      "title": "Introduction to Programming",
+      "content": "Learn the basics of programming...",
+      "order": 1,
+      "duration": 45,
+      "resources": [
+        {
+          "type": "video",
+          "url": "https://example.com/video1",
+          "title": "Programming Basics"
+        }
+      ],
+      "completed": true
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "1",
+      "course_id": 1,
+      "title": "Programming Fundamentals Quiz",
+      "description": "Test your knowledge of basic programming concepts",
+      "total_questions": 10,
+      "time_limit": 30,
+      "difficulty": "beginner",
+      "status": "published",
+      "created_at": "2024-03-01T00:00:00Z",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is a variable?",
+          "options": [
+            "A container for storing data",
+            "A mathematical equation",
+            "A programming language",
+            "A computer"
+          ],
+          "correct_option": 0
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Calculus Fundamentals",
+      "description": "Test your understanding of derivatives and integrals",
+      "course": "Advanced Mathematics",
+      "total_questions": 15,
+      "time_limit": 45,
+      "difficulty": "hard",
+      "status": "in_progress"
+    },
+    {
+      "id": "3",
+      "title": "Physics Laws and Principles",
+      "description": "Test your knowledge of Newton's laws and mechanics",
+      "course": "Physics Fundamentals",
+      "total_questions": 25,
+      "time_limit": 40,
+      "difficulty": "medium",
+      "status": "not_started"
+    },
+    {
+      "id": "4",
+      "title": "Chemical Reactions",
+      "description": "Test your understanding of chemical reactions and balancing equations",
+      "course": "Chemistry Basics",
+      "total_questions": 30,
+      "time_limit": 50,
+      "difficulty": "medium",
+      "status": "completed",
+      "score": 92,
+      "completion_date": "2024-03-22"
+    }
+  ],
+  "chat_history": [
+    {
+      "id": "1",
+      "role": "user",
+      "content": "Can you help me understand derivatives in calculus?",
+      "timestamp": "2024-03-24T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "role": "assistant",
+      "content": "Of course! A derivative measures the rate of change of a function at a specific point. Think of it as the slope of the tangent line at that point. Would you like me to explain the basic rules of differentiation?",
+      "timestamp": "2024-03-24T10:30:05Z"
+    },
+    {
+      "id": "3",
+      "role": "user",
+      "content": "Yes, please explain the power rule.",
+      "timestamp": "2024-03-24T10:31:00Z"
+    },
+    {
+      "id": "4",
+      "role": "assistant",
+      "content": "The power rule states that when you have a function in the form f(x) = x^n, its derivative is f'(x) = n * x^(n-1). For example:\n\n- If f(x) = x^2, then f'(x) = 2x\n- If f(x) = x^3, then f'(x) = 3x^2\n- If f(x) = x^4, then f'(x) = 4x^3\n\nWould you like to try some practice problems?",
+      "timestamp": "2024-03-24T10:31:05Z"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "1",
+      "title": "Khan Academy: Derivatives",
+      "description": "Interactive video lessons on derivatives and their applications",
+      "type": "resource",
+      "priority": "high"
+    },
+    {
+      "id": "2",
+      "title": "Practice Set: Basic Differentiation",
+      "description": "10 problems to practice power rule and basic derivatives",
+      "type": "practice",
+      "priority": "high"
+    },
+    {
+      "id": "3",
+      "title": "Review: Pre-calculus Concepts",
+      "description": "Quick review of essential pre-calculus topics for derivatives",
+      "type": "review",
+      "priority": "medium"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "course_id": 1,
+      "lesson_id": 1,
+      "content": "Great explanation of variables!",
+      "created_at": "2024-03-24T10:30:00Z",
+      "updated_at": "2024-03-24T10:30:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "type": "course_update",
+      "title": "New lesson available",
+      "message": "A new lesson has been added to Introduction to Computer Science",
+      "read": false,
+      "created_at": "2024-03-24T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "user_id": 2,
+      "type": "tutor_booking",
+      "title": "Tutoring Session Confirmed",
+      "message": "Your session with Light has been confirmed for March 26th",
+      "read": false,
+      "created_at": "2024-03-25T09:00:00Z"
+    },
+    {
+      "id": "3",
+      "user_id": 1,
+      "type": "tutor_request",
+      "title": "New Tutoring Request",
+      "message": "Jane Smith has requested a tutoring session",
+      "read": false,
+      "created_at": "2024-03-25T08:30:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "sender_id": 1,
+      "receiver_id": 2,
+      "content": "Hello! How can I help you with the course?",
+      "timestamp": "2024-03-25T10:30:00Z",
+      "read": false,
+      "message_type": "tutoring"
+    },
+    {
+      "id": "2",
+      "sender_id": 2,
+      "receiver_id": 1,
+      "content": "Hi! I have a question about the last assignment.",
+      "timestamp": "2024-03-25T10:31:00Z",
+      "read": true,
+      "message_type": "tutoring"
+    },
+    {
+      "id": "3",
+      "sender_id": 1,
+      "receiver_id": 3,
+      "content": "Great work on the quiz!",
+      "timestamp": "2024-03-25T11:00:00Z",
+      "read": true
+    },
+    {
+      "id": "3",
+      "sender_id": "1",
+      "receiver_id": "2",
+      "content": "hey",
+      "timestamp": "2025-03-25T08:07:25.159Z",
+      "read": false
+    },
+    {
+      "id": "4",
+      "sender_id": "1",
+      "receiver_id": "2",
+      "content": "how is it",
+      "timestamp": "2025-03-25T08:07:33.295Z",
+      "read": false
+    },
+    {
+      "id": "5",
+      "sender_id": "1",
+      "receiver_id": "3",
+      "content": "qw34jr",
+      "timestamp": "2025-03-25T08:07:37.136Z",
+      "read": false
+    },
+    {
+      "id": "6",
+      "sender_id": "2",
+      "receiver_id": "3",
+      "content": "hello",
+      "timestamp": "2025-03-25T09:32:19.770Z",
+      "read": false
+    },
+    {
+      "id": "7",
+      "sender_id": "1",
+      "receiver_id": "2",
+      "content": "hello",
+      "timestamp": "2025-03-25T13:32:53.272Z",
+      "read": false
+    },
+    {
+      "id": "8",
+      "sender_id": "1",
+      "receiver_id": "2",
+      "content": "hello",
+      "timestamp": "2025-03-25T13:33:02.458Z",
+      "read": false
+    },
+    {
+      "id": "f621",
+      "sender_id": "1",
+      "receiver_id": "2",
+      "content": "s",
+      "timestamp": "2025-03-25T13:33:54.035Z",
+      "read": false
+    },
+    {
+      "id": "9",
+      "sender_id": "1",
+      "receiver_id": "1",
+      "content": "hello me",
+      "timestamp": "2025-03-25T13:34:05.525Z",
+      "read": true
+    },
+    {
+      "id": "11",
+      "sender_id": "1",
+      "receiver_id": "4",
+      "content": "hi",
+      "timestamp": "2025-03-25T13:34:12.337Z",
+      "read": true
+    },
+    {
+      "id": "12",
+      "sender_id": "1",
+      "receiver_id": "1",
+      "content": "ehy",
+      "timestamp": "2025-03-25T13:34:52.813Z",
+      "read": true
+    },
+    {
+      "id": "13",
+      "sender_id": "1",
+      "receiver_id": "4",
+      "content": "hello",
+      "timestamp": "2025-03-25T18:09:15.793Z",
+      "read": true
+    },
+    {
+      "id": "14",
+      "sender_id": "4",
+      "receiver_id": "1",
+      "content": "hello",
+      "timestamp": "2025-03-25T18:10:24.875Z",
+      "read": true
+    },
+    {
+      "id": "15",
+      "sender_id": "1",
+      "receiver_id": "1",
+      "content": "hello",
+      "timestamp": "2025-03-25T18:42:12.952Z",
+      "read": true
+    },
+    {
+      "id": "4106",
+      "sender_id": "1",
+      "receiver_id": "4",
+      "content": "hello",
+      "timestamp": "2025-03-26T01:44:46.312Z",
+      "read": false
+    },
+    {
+      "id": "5411",
+      "sender_id": "1",
+      "receiver_id": "2",
+      "content": "iuhuih",
+      "timestamp": "2025-03-26T17:47:07.870Z",
+      "read": false
+    },
+    {
+      "id": "a78c",
+      "sender_id": "1",
+      "receiver_id": "2",
+      "content": "i8ou9",
+      "timestamp": "2025-03-26T17:47:09.403Z",
+      "read": false
+    }
+  ],
+  "tutor_availability": [
+    {
+      "id": "1",
+      "tutor_id": "1",
+      "day_of_week": "monday",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "is_available": true
+    },
+    {
+      "id": "2",
+      "tutor_id": "3",
+      "day_of_week": "tuesday",
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "is_available": true
+    },
+    {
+      "id": "3",
+      "tutor_id": "5",
+      "day_of_week": "wednesday",
+      "start_time": "09:00",
+      "end_time": "16:00",
+      "is_available": true
+    }
+  ],
+  "tutor_reviews": [
+    {
+      "id": "1",
+      "tutor_id": "1",
+      "student_id": "2",
+      "rating": 5,
+      "comment": "Excellent at explaining complex programming concepts",
+      "created_at": "2024-03-24T15:30:00Z"
+    },
+    {
+      "id": "2",
+      "tutor_id": "3",
+      "student_id": "4",
+      "rating": 5,
+      "comment": "Dr. Wilson makes physics easy to understand",
+      "created_at": "2024-03-23T14:00:00Z"
+    }
+  ],
+  "tutor_bookings": [
+    {
+      "id": "1",
+      "tutor_id": "1",
+      "student_id": "2",
+      "date": "2024-03-26",
+      "start_time": "10:00",
+      "end_time": "11:30",
+      "status": "confirmed",
+      "topic": "Advanced JavaScript Concepts",
+      "notes": "Need help with async/await and promises"
+    },
+    {
+      "id": "2",
+      "tutor_id": "3",
+      "student_id": "4",
+      "date": "2024-03-27",
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "status": "pending",
+      "topic": "Quantum Mechanics Introduction",
+      "notes": "Basic concepts and mathematical foundations"
+    }
+  ],
+  "app_settings": {
+    "general": {
+      "maintenance_mode": false,
+      "registration_enabled": true,
+      "max_file_upload_size": 10,
+      "allowed_file_types": [
+        "pdf",
+        "doc",
+        "docx",
+        "jpg",
+        "png"
+      ],
+      "session_timeout": 30,
+      "default_language": "en",
+      "available_languages": [
+        "en",
+        "fr",
+        "es"
+      ],
+      "time_zone": "UTC"
+    },
+    "security": {
+      "password_policy": {
+        "min_length": 8,
+        "require_uppercase": true,
+        "require_numbers": true,
+        "require_special_chars": true,
+        "max_age_days": 90
+      },
+      "two_factor_auth": {
+        "enabled": true,
+        "methods": [
+          "email",
+          "authenticator"
+        ]
+      },
+      "session_settings": {
+        "max_concurrent_sessions": 3,
+        "session_timeout_minutes": 60,
+        "remember_me_duration_days": 30
+      }
+    },
+    "tutoring": {
+      "minimum_rating": 4,
+      "commission_rate": 0.15,
+      "minimum_session_duration": 30,
+      "maximum_session_duration": 180,
+      "cancellation_policy": {
+        "free_cancellation_hours": 24,
+        "penalty_percentage": 50
+      }
+    }
+  }
+}
