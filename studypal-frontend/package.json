@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server --watch ../db.json --port 3001"
+    "server": "json-server --watch db.json --port 5000"
   },
   "dependencies": {
     "@google/genai": "^0.6.0",
